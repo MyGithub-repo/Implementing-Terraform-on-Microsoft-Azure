@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo "*********** Create or select workspace"
 if [ $(terraform workspace list | grep -c "$1") -eq 0 ] ; then
   echo "Create new workspace $1"
